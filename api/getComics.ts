@@ -1,5 +1,6 @@
 import { NowRequest, NowResponse } from "@now/node";
 
 export default function (req: NowRequest, res: NowResponse) {
-  res.status(200).send("OJBK");
+  res.setHeader("Location", "baidu.com");
+  res.status(303).end();
 }
